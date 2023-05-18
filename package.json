@@ -12,13 +12,23 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "sst": "^2.8.23",
+    "@tsconfig/node16": "^1.0.4",
+    "@types/pg": "^8.6.6",
     "aws-cdk-lib": "2.72.1",
     "constructs": "10.1.156",
-    "typescript": "^5.0.4",
-    "@tsconfig/node16": "^1.0.4"
+    "puppeteer": "^20.2.1",
+    "sst": "^2.8.23",
+    "typescript": "^5.0.4"
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "chrome-aws-lambda": "^10.1.0",
+    "io-ts": "^2.2.20",
+    "node-fetch": "^3.3.1",
+    "pg": "^8.11.0",
+    "puppeteer-core": "^10.4.0"
+  }
 }
