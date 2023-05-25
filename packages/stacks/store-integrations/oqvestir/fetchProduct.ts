@@ -1,6 +1,5 @@
 import chromium from "chrome-aws-lambda";
 import { load } from "cheerio";
-import { ProductInsertion } from "@look-manager/core/db/product/product.types";
 import fetch from "node-fetch";
 
 const puppeteer = chromium.puppeteer;
@@ -94,7 +93,7 @@ export async function fetchOqVestirProduct(
       })
       .get();
 
-    const product: ProductInsertion = {
+    const product = {
       name,
       sku,
       brand,
